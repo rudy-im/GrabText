@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OCR</title>
+  <style>
+    video, canvas {
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+    button {
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h2>📷 Camera OCR Test</h2>
+  <video id="video" width="320" height="240" autoplay playsinline></video><br>
+  <button id="start">▶️ START</button>
+  <button id="stop">⏹ STOP</button>
+  <button id="capture">📸 CAPTURE</button><br><br>
+  <canvas id="canvas" width="320" height="240"></canvas><br>
+  <pre id="output">OCR Result</pre>
+
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
